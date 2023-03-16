@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.2s;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.404), rgba(177, 18, 12, 0.418)), url(/img/gh1.jpg)   
+}
+
+.guests .guestreview {
+    margin: 0;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: white;
+}
+
+.guests .guestreview .logosocials {
+    width: 320px;
+    z-index: 1;  
+}
+
+.guests .guestreview .reviews {
+    padding-left: 30px;
+}
+
+.guests .guestreview h4 {
+    color: orangered;
+}
+
+.guests .guestreview p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.underline {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.section-title h2 {
+    position: relative;
+    color: rgb(255, 30, 0);
+}
+
+.guests img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    object-position: 30% 70%;
+}
+
+.rooms {
+    background: linear-gradient(rgba(233, 128, 7, 0.527),rgba(230, 84, 16, 0.63) );
+    padding: 40px 0;
+    overflow: hidden;  
+}
+
+.underline1 {
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.rooms-title h2 {
+    position: relative;
+}
+
+.card1 {
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-right-color: white;  
+}
+
+.card-body1 {
+    font-size: x-large;
+}
+
+.card1 button {
+    margin-left: 50px;
+}
+
+.location ul {
+    column-count: auto;
+}
+
+.location h3 {
+    color: rgb(255, 30, 0);
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: orangered;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+
+}
+
+footer a {  
+    margin-left: 10px;
+}
+
+footer p {
+    margin-left: 30px;
+    line-height: 8px;
+}
+
+@media screen and (min-width: 780px) {
+        .location ul {
+            column-count: 2;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    .location ul {
+        column-count: 3;
+    }
+}
+
+    
+
+ 
+
+
+    
